@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+<<<<<<< HEAD
       - run: npm ci --frozen-lockfile --legacy-peer-deps
+=======
+      - run: npm i --frozen-lockfile --legacy-peer-deps
+>>>>>>> ae3e199 (frozen lockfile)
       - run: npm run test -u
       - run: npm run make-badges
