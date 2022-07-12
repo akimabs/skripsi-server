@@ -17,10 +17,9 @@ jobs:
           username: ${{ secrets.SERVER_DEV_USERNAME }}
           password: ${{ secrets.SERVER_DEV_PASSWORD }}
           script: |
-            ls
-           # cd ${{ secrets.PROJECT_PATH_DEV }}
-           # git reset --hard
-           # git pull
-           # npm i
-           # npm run build
-           # pm2 restart ecosystem.config.js
+            cd ${{ secrets.PROJECT_PATH_DEV }}
+            git reset --hard
+            git pull
+            npm i
+            npm run build
+            pm2 restart ecosystem.config.js
