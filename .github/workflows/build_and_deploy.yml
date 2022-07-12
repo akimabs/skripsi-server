@@ -17,6 +17,7 @@ jobs:
           username: ${{ secrets.SERVER_DEV_USERNAME }}
           password: ${{ secrets.SERVER_DEV_PASSWORD }}
           script: |
+            whoami
             cd ${{ secrets.PROJECT_PATH_DEV }}
             git reset --hard
             git pull
