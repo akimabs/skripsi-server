@@ -18,7 +18,7 @@ describe('Example Service', () => {
     appController = app.get<ExampleController>(ExampleController);
   });
 
-  const data = { exampleData: 'data', asd: 'asd' };
+  const data = { exampleData: 'data' };
 
   const result: GetExampleResDto = {
     code: 200,
