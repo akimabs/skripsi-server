@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check
-        run:  echo ${{ secrets.SERVER_IP_DEV }}
+        run: echo ${{ secrets.SERVER_IP_DEV }}
       - name: Checkout
         uses: actions/checkout@v2
         command: echo ${{ secrets.SERVER_IP_DEV }}
