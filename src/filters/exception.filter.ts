@@ -20,12 +20,12 @@ export class AllExceptionsFilter implements ExceptionFilter {
     const { response, message } = exception as any;
 
     if (response?.message && Array.isArray(response.message)) {
-      response.error = response.message.map((msg) => {
+      response.error = response.message.map((msg: string) => {
         const err = {
           field: '',
           validate: [],
         };
-        msg.split(' ').forEach((val, index) => {
+        msg.split(' ').forEach((val: string, index: number) => {
           if (index === 0) {
             err.field = val;
           } else {
