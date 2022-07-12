@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        command: echo ${{ secrets.SERVER_IP_DEV }}
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master
         with:

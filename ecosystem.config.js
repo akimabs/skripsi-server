@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'rumahtangga',
+      name: 'server',
       script: 'dist/main.js',
       instances: 1,
       autorestart: true,
@@ -18,7 +18,7 @@ module.exports = {
       host: '47.254.215.117',
       ref: 'origin/main',
       repo: 'git@github.com:akimabs/skripsi-server.git',
-      path: '/var/www/skripsi-server',
+      path: '/apps/skripsi-server',
       'post-deploy':
         'npm install && pm2 reload ecosystem.config.js --env production',
     },
