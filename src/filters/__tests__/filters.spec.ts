@@ -1,6 +1,6 @@
 import { AllExceptionsFilter } from '../exception.filter';
 
-test('Test description', () => {
+test('Test Error', () => {
   const t = () => {
     throw new AllExceptionsFilter();
   };

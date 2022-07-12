@@ -28,7 +28,7 @@ describe('Example Service', () => {
   };
 
   describe('root', () => {
-    it('should return example response', async () => {
+    it('should return example response true', async () => {
       expect(await appController.get(data)).toEqual(result);
     });
   });
