@@ -15,8 +15,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP_DEV }}
           username: ${{ secrets.SERVER_DEV_USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          port: 22
+          password: ${{ secrets.SERVER_DEV_PASSWORD }}
           script: |
             cd ${{ secrets.PROJECT_PATH_DEV }}
             git reset --hard
