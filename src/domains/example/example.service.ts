@@ -8,6 +8,7 @@ export class ExampleService {
   async get(exampleData: string): Promise<Response> {
     const data = {
       exampleData,
+      asd: 'asd',
     };
     return new Response(SUCCESS_GET_EXAMPLE, HttpStatus.OK, data);
   }
