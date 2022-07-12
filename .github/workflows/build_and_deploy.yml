@@ -22,6 +22,6 @@ jobs:
             git reset --hard
             git pull
             npm cache clear --force
-            npm i
+            npm i --verbose
             npm run build
             pm2 restart ecosystem.config.js
