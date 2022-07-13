@@ -21,6 +21,7 @@ async function bootstrap() {
     .setVersion('1.0')
     .addTag('/api/v1')
     .addServer(`http://localhost:${PORT}`)
+    .addServer('https://akimabs.my.id')
     .addBearerAuth()
     .build();
 
