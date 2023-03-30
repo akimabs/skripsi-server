@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "skripsi-reimburse",
+  "private_key_id": "15384c49daa0a4afcb38a88fd8880b6a23cd1acc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDNSr6h0jzDRmCw\nC3fL2o1hDk1GQZ+wkFVApDrFWonEY+VnfT0Oc+b0L8RGlqvhkV8W7sP8cihfSw7i\nV5DPsscEE2BMw/gPk1EU1ine4XZgUfPMq7YTdOjSbqKxtXTy9YaJGVCS4vZeYqld\n8dMaWEzKkoEzShzXsJ5ahmAsZcrVcmW+DFilWVhJ1JDS/tHI5qLMsbuhjHHlCHIr\n3d+fuF+WDL0hcEij1zDHoJL/fNLN02Pa6QpjWDDWg1CVM7dT32nRUDX10wFpA5tw\ne//WW+nzU/GVMSnUL2eWVP9FQkMlvSj9NjPo2qiI/MvnYyFuvOXVnL+Jk95z+J7a\ni2rrF6IPAgMBAAECgf9YvqGp/ThHMiVEn7B/GftZTtVuNEV+uOYhtjJcc3HFdBRh\n/cG8fbNZMUz9Ns/BXcES03nlp3PMaKYGh9QR9Ta94aJqN6JZw//zrKEXuF9z7qQg\ngMTfpFUBTX0HVWnjnZU1rxElw6ISgJQMCH3kOvJMn7M6eM9Ublqwx2YhIIqOZMl2\nNloItr0XrtoQcs2Qsy9PjFsRK5OUjOVSRrvltjX2I12hZiRV58iDQZp0QkM+kdy0\nbIyw4IjDHYmgIeHbMlk7iuuFR99q5Z1IKWXTufT67wp+CukvTlbws7EDgbtoFnM1\ny5BdHHHdH3lBWRc6CaO9XHQ9MXBkP+hFTRz+YiECgYEA959airocCXByx2wL+2pJ\ng9zB093hjZPPDZW6Ky69q25/XE2V5FhBm5bvul2WOZKO40LF3wkg+BVpiOZLMfgv\nvuLbqRsaDIVVzeNYiYypkqT07kCil6GhV0PSNFMgZA5+LPm5eW+HygvZqF0cHp+D\nW4wWCEjECh+Vk8UELVVF+YMCgYEA1DzEve1ms4nBh6xsNGkEQNcb24u0MsYis4ii\nCNvmZ81MnwyvvNAZ7zX/OnV/KEKYTda0UN6gVuPWxfgnWKliFePpZuzDnOmb/nyx\nT8J4PP8zyINmUCEW3/IHgAmTzxk0hVlIC9dga6fGmWmIhhtD358dZnFvauFxxgZl\nMhucK4UCgYAGjyoO0q87cMcZkTsgBci8vXRE8HOxFGE/st+jlTFhASROhZ+a1Nuo\nC29+OExqaf9u9a3YIp3E9Iw/HBqR0EkzfT7kU9t0yXNkaMlHm3pCcCwsw3mLGrTz\nYtCGok0RWXDuMA9BsDqgl3/EffLovMD2A9fxkDvhKMUFjQp3SPL5kQKBgHprWuha\niUTCDtldQUSx1nw4F595Y8VtuBJqm1wUyz/QkYOkY7G7L1plgQSNRX1JfGRZlcSX\nxVCZNwcV7kwb17HctoJhyys1LH+MGRJyj7xPT+U2tcs+at1d06ms3I82cK8CIqaB\n4uH18n4G+3KvQ2U3eFPg1m2GAIRCqBhRCLGpAoGBALXd5aw8expyqWVS9gQnZRBO\n/0PD+Uug3W9oZX54XrSY1bI3s4MebWeaJFwvZQ2KuQnpuaVUluTwBP4Wx5yHs6Qr\nT6sf3hgRe4x68/HM5oCvxMoCA5CjjcbP4ZGErK77eoXN9LgKbgHgo9L5398tEEqZ\nxJ3U/rCR42Y82X4SPupS\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ae8mx@skripsi-reimburse.iam.gserviceaccount.com",
+  "client_id": "116034516954620640814",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ae8mx%40skripsi-reimburse.iam.gserviceaccount.com"
+}

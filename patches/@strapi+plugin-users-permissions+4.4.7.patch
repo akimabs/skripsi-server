@@ -1,0 +1,54 @@
+diff --git a/node_modules/@strapi/plugin-users-permissions/server/controllers/auth.js b/node_modules/@strapi/plugin-users-permissions/server/controllers/auth.js
+index cb73abd..e0d18df 100644
+--- a/node_modules/@strapi/plugin-users-permissions/server/controllers/auth.js
++++ b/node_modules/@strapi/plugin-users-permissions/server/controllers/auth.js
+@@ -52,6 +52,7 @@ module.exports = {
+ 
+       // Check if the user exists.
+       const user = await strapi.query('plugin::users-permissions.user').findOne({
++        populate: ["role"],
+         where: {
+           provider,
+           $or: [{ email: identifier.toLowerCase() }, { username: identifier }],
+@@ -86,9 +87,11 @@ module.exports = {
+         throw new ApplicationError('Your account has been blocked by an administrator');
+       }
+ 
++      const authData = await sanitizeUser(user, ctx)
++
+       return ctx.send({
+         jwt: getService('jwt').issue({ id: user.id }),
+-        user: await sanitizeUser(user, ctx),
++        user: {...authData, role: user?.role}
+       });
+     }
+ 
+diff --git a/node_modules/@strapi/plugin-users-permissions/server/controllers/user.js b/node_modules/@strapi/plugin-users-permissions/server/controllers/user.js
+index f096bd8..df29eba 100644
+--- a/node_modules/@strapi/plugin-users-permissions/server/controllers/user.js
++++ b/node_modules/@strapi/plugin-users-permissions/server/controllers/user.js
+@@ -183,16 +183,18 @@ module.exports = {
+    * Retrieve authenticated user.
+    * @return {Object|Array}
+    */
+-  async me(ctx) {
+-    const authUser = ctx.state.user;
+-    const { query } = ctx;
++   async me(ctx) {
++    let user = ctx.state.user;
+ 
+-    if (!authUser) {
++    if (!user) {
+       return ctx.unauthorized();
+     }
+ 
+-    const user = await getService('user').fetch(authUser.id, query);
+-
+     ctx.body = await sanitizeOutput(user, ctx);
++    // my customisation
++    ctx.body = {
++      ...ctx.body,
++      role: user.role
++    }
+   },
+ };

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approvals",
+  "info": {
+    "singularName": "approval",
+    "pluralName": "approvals",
+    "displayName": "Approval",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "approver": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "list_approvals"
+    },
+    "status": {
+      "type": "string"
+    },
+    "reimburses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reimburse.reimburse",
+      "mappedBy": "approval"
+    },
+    "reason": {
+      "type": "text"
+    }
+  }
+}
