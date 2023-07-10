@@ -86,6 +86,9 @@
     },
     "tokenNotification": {
       "type": "text"
+    },
+    "full_name": {
+      "type": "string"
     }
   }
 }
